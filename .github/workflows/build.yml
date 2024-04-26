@@ -1,0 +1,33 @@
+name: Build and deploy
+
+# Can be triggered by push and by manual interaction
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8
+          run_install: false
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: "pnpm"
+
+      - name: Install dependencies
+        run: pnpm install
+
+      # TODO:
+      # - Build the application (pnpm build)
+      # - Create an artifact (archive) that contains the dist/www directoy using actions/upload-pages-artifact
+      # - In a separate job, deploy the content of that archive to GitHub Pages

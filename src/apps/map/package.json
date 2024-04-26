@@ -1,5 +1,5 @@
 {
-    "name": "ol-app",
+    "name": "map",
     "private": true,
     "dependencies": {
         "@chakra-ui/icons": "^2.1.1",

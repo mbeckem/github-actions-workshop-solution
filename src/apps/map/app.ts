@@ -11,4 +11,4 @@ const element = createCustomElement({
     appMetadata
 });
 
-customElements.define("ol-map-app", element);
+customElements.define("map-element", element);

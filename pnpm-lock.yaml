@@ -161,9 +161,6 @@ importers:
       happy-dom:
         specifier: ^12.10.3
         version: 12.10.3
-      husky:
-        specifier: ^8.0.3
-        version: 8.0.3
       js-yaml:
         specifier: ^4.1.0
         version: 4.1.0
@@ -201,34 +198,7 @@ importers:
         specifier: ^0.34.6
         version: 0.34.6(happy-dom@12.10.3)(jsdom@22.1.0)(sass@1.70.0)
 
-  src/apps/empty:
-    dependencies:
-      '@open-pioneer/chakra-integration':
-        specifier: ^1.1.2
-        version: 1.1.2(@chakra-ui/react@2.8.2)(@emotion/cache@11.11.0)(@emotion/react@11.11.4)(@emotion/styled@11.11.0)(framer-motion@10.17.6)(react-dom@18.2.0)(react@18.2.0)
-      '@open-pioneer/runtime':
-        specifier: ^2.1.3
-        version: 2.1.3(@formatjs/intl@2.10.0)(@open-pioneer/base-theme@0.3.1)(@open-pioneer/chakra-integration@1.1.2)(@open-pioneer/core@1.2.2)(@open-pioneer/runtime-react-support@1.0.1)(react-dom@18.2.0)(react@18.2.0)
-      sample-package:
-        specifier: workspace:^
-        version: link:../../packages/sample-package
-
-  src/packages/sample-package:
-    dependencies:
-      '@open-pioneer/runtime':
-        specifier: ^2.1.3
-        version: 2.1.3(@formatjs/intl@2.10.0)(@open-pioneer/base-theme@0.3.1)(@open-pioneer/chakra-integration@1.1.2)(@open-pioneer/core@1.2.2)(@open-pioneer/runtime-react-support@1.0.1)(react-dom@18.2.0)(react@18.2.0)
-
-  src/samples/i18n-howto/app:
-    dependencies:
-      '@open-pioneer/chakra-integration':
-        specifier: ^1.1.2
-        version: 1.1.2(@chakra-ui/react@2.8.2)(@emotion/cache@11.11.0)(@emotion/react@11.11.4)(@emotion/styled@11.11.0)(framer-motion@10.17.6)(react-dom@18.2.0)(react@18.2.0)
-      '@open-pioneer/runtime':
-        specifier: ^2.1.3
-        version: 2.1.3(@formatjs/intl@2.10.0)(@open-pioneer/base-theme@0.3.1)(@open-pioneer/chakra-integration@1.1.2)(@open-pioneer/core@1.2.2)(@open-pioneer/runtime-react-support@1.0.1)(react-dom@18.2.0)(react@18.2.0)
-
-  src/samples/map-sample/ol-app:
+  src/apps/map:
     dependencies:
       '@chakra-ui/icons':
         specifier: ^2.1.1
@@ -4806,12 +4776,6 @@ packages:
       debug: 4.3.4
     transitivePeerDependencies:
       - supports-color
-    dev: true
-
-  /husky@8.0.3:
-    resolution: {integrity: sha512-+dQSyqPh4x1hlO1swXBiNb2HzTDN1I2IGLQx1GrBuiqFJfoMrnZWwVmatvSiO+Iz8fBUnf+lekwNo4c2LlXItg==}
-    engines: {node: '>=14'}
-    hasBin: true
     dev: true
 
   /hyphenate-style-name@1.0.4:
